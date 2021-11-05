@@ -1,13 +1,430 @@
+@font-face {
+    font-family: 'Galano Grotesque Regular';
+    src: local("Galano Grotesque Regular"), url(./fonts/galanogrotesque-regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Galano Grotesque Medium';
+    src: local("Galano Grotesque Medium"), url(./fonts/galanogrotesque-medium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Galano Grotesque Semibold';
+    src: local("Galano Grotesque Semibold"), url(./fonts/galanogrotesque-semibold.otf) format('opentype');
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: Galano Grotesque Regular !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.dukaan-logo {
+    height: 44px;
+    width: 156px;
+    border-radius: 0px;
+    cursor: pointer;
+
+}
+
+.header-container {
+    height: 328px;
+    background-color: #146EB4;
+    color: white;
+    padding-top: 20px;
+}
+
+.container-child {
+    width: 1120px !important;
+}
+
+.content-container {
+    width: 1120px !important;
+    padding-bottom: 64px;
+   /* height: 1430px;*/
+    margin-top: -194px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px 0px #1A181E0F;
+    margin-bottom: 80px;
+}
+
+.content-row {
+    margin-top: 64px !important;
+    margin-bottom: 66px !important;
+}
+
+.info-container {
+    height: 332px;
+    background-color: #f3f7fb;
+}
+
+
+.other-tools-container {
+    width: 1120px !important;
+}
+
+.footer-container {
+    margin-top: 80px;
+    height: 283px;
+    background-color: #1A181E;
+    color: white;
+}
+
+.cta-button {
+    font-family: Galano Grotesque Medium;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    height: 50px;
+    border-radius: 4px !important;
+    background-color: #FFFFFF !important;
+    color: #146EB4 !important;
+}
+
+.link {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.link:hover {
+    text-decoration: underline !important;
+}
+
+.tool-name {
+    font-family: Galano Grotesque Medium;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: -0.04em;
+    text-align: left;
+
+}
+
+.tool-description {
+    font-family: Galano Grotesque Regular;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.tool-input-label {
+    font-family: Galano Grotesque Medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.tool-word-input-group {
+    margin-top: 8px !important;
+    position: relative;
+    width: 352px !important;
+
+}
+
+.tool-word-input {
+    height: 48px !important;
+    width: 352px !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.tool-word-input:focus {
+    box-shadow: none !important;
+    border-color: #D9D9D9;
+}
+
+.tool-word-submit-button {
+    margin-top: 48px;
+    height: 50px;
+    width: 204px;
+    border-radius: 4px;
+    padding: 8px, 24px, 8px, 24px;
+    background-color: #146EB4;
+    font-family: Galano Grotesque Medium;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+}
+
+.close-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 12px;
+    top: 15px;
+    bottom: 15px;
+    background-image: url(./icons/cross.png);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    color: #4D4D4D;
+}
+
+.slogan-generated-title {
+    font-family: Galano Grotesque Medium;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+}
+
+.download-slogans-button {
+    height: 36px !important;
+    padding: 0 24px 0 24px !important;
+    background-color: white !important;
+    color: #146EB4 !important;
+}
+
+.slogan-container-header {
+    padding-top: 48px;
+    margin-bottom: 36px;
+}
+
+.slogan-container {
+    margin-bottom: 28px;
+}
+
+.slogan-button {
+    font-family: Galano Grotesque Regular;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 22px !important;
+    letter-spacing: 0em !important;
+    text-align: left !important;
+    color: #1A181E !important;
+    background-color: #F2F2F2 !important;
+    border: none !important;
+    height: 60px;
+    width: 100%;
+}
+
+.results-number-circle {
+    cursor: pointer;
+    display: inline-block;
+    font-family: Galano Grotesque Regular;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    /*line-height: 20px;*/
+    letter-spacing: 0em;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: white;
+    color: #146EB4;
+    text-align: center;
+}
+
+.results-number-circle.active {
+    background-color: #146EB4;
+    color: white;
+}
+
+.results-next-button {
+    cursor: pointer;
+    display: inline-block;
+    font-family: Galano Grotesque Regular;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    border-radius: 20px;
+    background-color: white;
+    color: #146EB4;
+}
+
+.results-next-logo {
+    height: 12px;
+    width: 12px;
+    border-radius: 0px;
+
+}
+
+.feature-icon {
+    height: 72px;
+    width: 72px;
+    border-radius: 0px;
+
+}
+
+.feature-heading {
+    font-family: Galano Grotesque Medium;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.feature-description {
+    font-family: Galano Grotesque Regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.feature-icon-container {
+    padding-top: 76px !important;
+}
+
+.feature-heading-container {
+    padding-top: 36px !important;
+}
+
+.feature-description-container {
+    padding-top: 8px !important;
+    padding-bottom: 64px !important;
+}
+
+.other-tools-heading {
+    font-family: Galano Grotesque Regular;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    padding-top: 80px;
+    margin-bottom: 48px;
+
+}
+
+.other-tools-logo {
+    height: 200px;
+    width: 352px;
+    border-radius: 6px;
+
+}
+
+.other-tools-name {
+    font-family: Galano Grotesque Medium;
+    cursor: pointer;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    margin-top: 16px;
+
+}
+
+.other-tools-description {
+    font-family: Galano Grotesque Regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 6px;
+
+}
+
+.other-tools-row {
+    margin-bottom: 8px;
+}
+
+.footer-content-container {
+    padding-top: 64px;
+}
+
+.footer-link {
+    cursor: pointer;
+    font-family: Galano Grotesque Regular;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-text {
+    font-family: Galano Grotesque Regular;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.jobs-number-circle {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+    color: #1A181E;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+}
+
+.india-flag {
+    height: 17.06005859375px;
+    width: 27px;
+    border-radius: 3px;
+
+}
+
+.flag-class {
+    width: 11% !important;
+    flex: 0 0 11% !important;
+    max-width: 11% !important;
+}
+
+.tooltip {
+    font-family: Galano Grotesque Medium !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+    letter-spacing: 0em !important;
+    text-align: left !important;
+
+    height: 28px;
+    border-radius: 4px;
+    padding: 4px 8px 4px 8px !important;
+
 }
